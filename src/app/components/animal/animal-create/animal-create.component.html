@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-title>Novo Animal</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Espécie" [(ngModel)]="animal.especie" name="especie"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Sexo" [(ngModel)]="animal.sexo" name="sexo"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Nome" [(ngModel)]="animal.nome" name="nome"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Nome do pai" [(ngModel)]="animal.nomedopai" name="nomedopai"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Nome da mãe" [(ngModel)]="animal.nomedamae" name="nomedamae"/>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Aniversário" [(ngModel)]="animal.aniversario" name="aniversario"/>
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="createAnimal()" color="primary">
+    Salvar
+  </button>
+  <button mat-raised-button (click)="cancel()">
+    Cancelar
+  </button>
+</mat-card>
+
